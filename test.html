@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<title>Nedpy</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="assets/img/nfc-n.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="assets/css/style.css">
+
+
+<body>
+
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div id='Clock' class="clock">
+  </div>
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    <img src="assets/img/nfc-n.png" width="40" height="40">
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top" style="text-shadow: 2px 3px grey;">We Are Developers</h1>
+    <div class="tooltip">
+      <a href="assets/mincraftserver.html">
+    <img class="minecraft" src="assets/img/creeper.png" width="50px" height="50px"></a>
+    <span class="tooltiptext">Minecraft</span>
+  </div>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center" style="text-shadow: 1px 2px grey;">This is my world</p>
+
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+    .<span style="color: rgb(255, 136, 0);">Powered by</span> <a id="Hovertypering" href="https://www.w3schools.com/w3css/default.asp" target="_blank" style='color:cyan;'>Nedpy</a>.
+  </div>
+</div>
+<div id='links'>
+    <a href='https://quiz24.ir' target="_blank">
+    <img class='nbu' src="assets/img/nfc-n.png" width="20px" height="20px">
+    <a href="https://www.instagram.com/_nedpy_" target="_blank">
+        <img class="nbu" src="assets/img/instagram.png" width="20px" height="20px">
+    </a>
+    <a href="https://t.me/X_Nedpy_X" target="_blank">
+            <img class="nbu" src="http://captcha.pythonanywhere.com/static/img/telegram.png" width="15px" height="15px">
+
+    </a>
+
+<!-- <div>
+<img src="/img/creeper.png" sizes="20px">
+</div> -->
+
+</div>
+
+</body>
+<script>
+  function SetTime(){
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    h = checkTime(h); m = checkTime(m); s = checkTime(s);
+    document.getElementById('Clock').innerHTML = h+':'+m+':'+s
+  }
+
+  function checkTime(t){
+    if(t<10) {t='0'+t}
+    return t;
+  }
+  setInterval(SetTime, 500)
+</script>
+</html>

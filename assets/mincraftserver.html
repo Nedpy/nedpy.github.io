@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<header>
+    <link rel="icon" href="../img/mincraft.png">
+<title>MineServer</title>
+</header>
+
+<body>
+<div id="information">
+    <img src="img/diamond.png" >
+<h1 class="titlic" style="color:darkslategrey; text-shadow: 1px 2px grey;">The Server Information</h1>
+<div class="server">
+<b style="color: gold; text-shadow: rgb(177, 155, 32);">Version : Bedrock</b><br>
+Server Adress : UNKNOWN
+<br>Port : UNKNOWN<br><br>
+<span title="The server is offline right now" id="statusfalse">&#x229A OFFLINE &#x229A</span>
+
+</div>
+</div>
+<div id="backmine">
+<h1 class="titlic"> &infin; Minecraft Letsplay Pics &infin; </h1>
+<div class="tooltip">
+<img class='imgmine Hovermode' src="img/mineback2.jpg" width="100" height="60"><span class="tooltiptext">
+    <i>Walpaper</i>
+</span></div>
+<div class="tooltip">
+<img class='imgmine Hovermode' src="img/mineback3.jpg" width="90" height="60"><span class='tooltiptext'>
+    <i><b>Creepers</b></i><br><p style="font-size: smaller;">
+        is a mob that <br>can burst when<br> it come near to<br> you and you can give <b>gunpowder</b> with killing it
+    </p>
+</span></div>
+</div>
+</body>
+<style>
+    .Hovermode:hover{
+        filter: contrast(40%);
+    }
+    .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px;
+ }
+ 
+ .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 58%;
+  margin-left: -70px;
+ }
+ 
+ .tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #000000 transparent;
+ }
+ 
+ .tooltip:hover .tooltiptext {
+  visibility: visible;
+ } 
+    .imgmine{
+        border: 1px solid black;
+    }
+    #backmine{
+        padding: 8px;
+        box-shadow: 3px 5px;  border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 10px rgba(255, 255, 255, 0.432);
+        border: 1px solid black;
+        background-color: dimgray;
+        background-size: contain;
+        color: white;
+        position: fixed;
+        top: 50px;
+        right: 50px;
+    }
+    #status2{
+        color: white;
+        font-family: "Copperplate", fantasy;
+        font-size:x-large;
+    }
+    #statustrue{
+        background-color:white;
+        background-size: contain;
+        color: green;
+        font-family: "Copperplate", fantasy;
+        font-size:x-large;
+    }
+    #statusfalse{
+        background-color:white;
+        background-size: contain;
+        color: red;
+        font-family: "Copperplate", fantasy;
+        font-size:x-large;
+    }
+    .titlic{
+        font-family: "Raleway", sans-serif 
+    }
+    /* #information{
+        background-color: brown;
+        background-size:contain;
+    } */
+    body{
+        background-image: url('img/mineback1.jpg');
+        background-size: cover;
+    }
+    .server{
+        color: darkgray;
+        font-family: "Courier New", monospace;
+        font-size: x-larges;
+    }
+</style>
+</html>
