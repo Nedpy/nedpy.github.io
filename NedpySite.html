@@ -14,63 +14,64 @@
 <body>
 
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-      <div>
-        <a  href="https://dinoswords.gg/">
-    <img title='Daino sword' class="dainofilter" id='daino' src="assets/img/googe_dino.png" width="50px" height="50px"></div><div id='Clock' class="clock">
-    </a>
-</div>
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    <img title='My logo' src="assets/img/nfc-n.png" width="40" height="40">
-  </div>
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top" style="text-shadow: 2px 3px grey;">We Are Developers</h1>
-    <div class="tooltip">
+  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+    <div>
+      <a href="https://dinoswords.gg/">
+        <img title='Daino sword' class="dainofilter" id='daino' src="assets/img/googe_dino.png" width="50px"
+          height="50px">
+    </div>
+    <div id='Clock' class="clock">
+      </a>
+    </div>
+    <div style="position: absolute; top: 8px; right: 2cm; font-size: 18px;">
       <a href="assets/mincraftserver.html">
-    <img class="minecraft" src="assets/img/creeper.png" width="50px" height="50px"></a>
-    
-    <span class="tooltiptext">Minecraft</span>
-  </div>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center" style="text-shadow: 1px 2px grey;">This is my world</p>
+        <img title="Minecraft" class="dainofilter" src="assets/img/creeper.png" width="50px" height="50px"></a>
+    </div>
+    <div class="w3-display-topleft w3-padding-large w3-xlarge">
+      <img title='My logo' src="assets/img/nfc-n.png" width="40" height="40">
+    </div>
+    <div class="w3-display-middle">
+      <h1 class="w3-jumbo w3-animate-top" style="text-shadow: 2px 3px grey;">We Are Developers</h1>
 
+      <hr class="w3-border-grey" style="margin:auto;width:40%">
+      <p class="w3-large w3-center" style="text-shadow: 1px 2px grey;">This is my world</p>
+
+    </div>
+    <div class="w3-display-bottomleft w3-padding-large">
+      .<span style="color: rgb(255, 136, 0);">Powered by</span> <a id="Hovertypering" href="https://t.me/X_Nedpy_X"
+        target="_blank" style='color:cyan;'>Nedpy</a>.
+    </div>
   </div>
-  <div class="w3-display-bottomleft w3-padding-large">
-    .<span style="color: rgb(255, 136, 0);">Powered by</span> <a id="Hovertypering" href="https://t.me/X_Nedpy_X" target="_blank" style='color:cyan;'>Nedpy</a>.
-  </div>
-</div>
-<div id='links'>
-    <a href='https://nedpy.github.io/NedpySite.html' target="_blank">
-    <img class='nbu' src="assets/img/nfc-n.png" width="20px" height="20px">
-    <a href="https://www.instagram.com/_nedpy_" target="_blank">
+  <div id='links'>
+    <a href='https://nedpy.github.io/NedpySite.html'>
+      <img class='nbu' src="assets/img/nfc-n.png" width="20px" height="20px">
+    </a>
+      <a href="https://www.instagram.com/_nedpy_">
         <img class="nbu" src="assets/img/instagram.png" width="20px" height="20px">
-    </a>
-    <a href="https://t.me/X_Nedpy_X" target="_blank">
-            <img class="nbu" src="http://captcha.pythonanywhere.com/static/img/telegram.png" width="15px" height="15px">
+      </a>
+      <a href="https://t.me/X_Nedpy_X">
+        <img class="nbu" src="http://captcha.pythonanywhere.com/static/img/telegram.png" width="17px" height="17px">
 
-    </a>
+      </a>
 
-<!-- <div>
-<img src="/img/creeper.png" sizes="20px">
-</div> -->
-
-</div>
+  </div>
 
 </body>
 <script>
-  function SetTime(){
+  function SetTime() {
     var today = new Date();
     var h = today.getHours();
     var m = today.getMinutes();
     var s = today.getSeconds();
     h = checkTime(h); m = checkTime(m); s = checkTime(s);
-    document.getElementById('Clock').innerHTML = h+':'+m+':'+s
+    document.getElementById('Clock').innerHTML = h + ':' + m + ':' + s
   }
 
-  function checkTime(t){
-    if(t<10) {t='0'+t}
+  function checkTime(t) {
+    if (t < 10) { t = '0' + t }
     return t;
   }
   setInterval(SetTime, 500)
 </script>
+
 </html>
