@@ -38,7 +38,6 @@ body, html {height: 100%}
   filter: contrast(40%);
 }
 .dainofilter:hover{
-  position: absolute;
   filter: brightness(50%);
 }
 .tooltip {
@@ -49,17 +48,17 @@ body, html {height: 100%}
  
  .tooltip .tooltiptext {
   visibility: hidden;
-  width: 250px;
-  background-color: #258300;
-  color: #fff;
+  width: 100px;
+  background-color: #069c26;
+  color: white;
   text-align: center;
   border-radius: 10px;
   padding: 5px 0;
   position: absolute;
   z-index: 1;
-  top: 120%;
-  left: 42%;
-  margin-left: -70px;
+  top: 57px;
+  left: 58%;
+  margin-left: -55px;
  }
  
  .tooltip .tooltiptext::after {
@@ -70,9 +69,9 @@ body, html {height: 100%}
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: transparent transparent #258300 transparent;
+  border-color: transparent transparent #069c26 transparent;
  }
  
  .tooltip:hover .tooltiptext {
   visibility: visible;
- } 
+ }
