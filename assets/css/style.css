@@ -10,7 +10,7 @@ body, html {height: 100%}
   filter: contrast(40%);
 }
 .bgimg {
-  background-image: url('../img/Astronaut.jpg');
+  background-image: url('img/Astronaut.jpg');
   min-height: 100%;
   background-position: center;
   background-size: cover;
