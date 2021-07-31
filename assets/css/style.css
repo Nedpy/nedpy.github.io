@@ -1,52 +1,86 @@
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-#daino{
+body,
+h1 {
+  font-family: "Raleway", sans-serif
+}
+
+body,
+html {
+  height: 100%
+}
+
+#daino {
   position: absolute;
   top: 8px;
   right: 16px;
   font-size: 18px;
 }
-#Hovertypering:hover{
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: purple;
+}
+
+.party:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+#Hovertypering:hover {
   filter: contrast(40%);
 }
+
 .bgimg {
   background-image: url('../img/Astronaut.jpg');
   min-height: 100%;
   background-position: center;
   background-size: cover;
 }
-#links{
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
+
+#links {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
 }
-.Hovering:hover{
+
+.Hovering:hover {
   background-color: rgba(0, 0, 255, 0.795);
   background-size: 17px;
   filter: grayscale(100%);
 
 }
-.nbu:hover{
+
+.nbu:hover {
   filter: contrast(40%);
 }
-.clock{
-  color:white;
-  text-align:center;
+
+.clock {
+  color: white;
+  text-align: center;
   font-size: 20px;
 }
-.minecraft:hover{
+
+.minecraft:hover {
   filter: contrast(40%);
 }
-.dainofilter:hover{
+
+.dainofilter:hover {
   filter: brightness(50%);
 }
+
 .tooltip {
   position: relative;
   display: inline-block;
   border-bottom: 1px;
- }
- 
- .tooltip .tooltiptext {
+}
+
+.tooltip .tooltiptext {
   visibility: hidden;
   width: 100px;
   background-color: #069c26;
@@ -59,9 +93,9 @@ body, html {height: 100%}
   top: 57px;
   left: 58%;
   margin-left: -55px;
- }
- 
- .tooltip .tooltiptext::after {
+}
+
+.tooltip .tooltiptext::after {
   content: "";
   position: absolute;
   bottom: 100%;
@@ -70,8 +104,8 @@ body, html {height: 100%}
   border-width: 5px;
   border-style: solid;
   border-color: transparent transparent #069c26 transparent;
- }
- 
- .tooltip:hover .tooltiptext {
+}
+
+.tooltip:hover .tooltiptext {
   visibility: visible;
- }
+}
