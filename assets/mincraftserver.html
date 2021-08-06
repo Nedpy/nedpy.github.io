@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <header>
     <link rel="icon" href="img/mincraft.png">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <title>MineServer</title>
 </header>
 
@@ -21,16 +20,38 @@ Server Adress : UNKNOWN
 <h1 class="titlic"> &infin; Minecraft Letsplay Pics &infin; </h1>
 <div class="tooltip">
 <img class='imgmine Hovermode' src="img/mineback2.jpg" width="100" height="60"><span class="tooltiptext">
-    <i>Wallpaper</i>
+    <i>Walpaper</i>
 </span></div>
 <div class="tooltip">
 <img class='imgmine Hovermode' src="img/mineback3.jpg" width="90" height="60"><span class='tooltiptext'>
     <i><b>Creepers</b></i><br><p style="font-size: smaller;">
-        is a mob that can burst when it come near to you and you can give <b>gunpowder</b> with killing it
+        is a mob that <br>can burst when<br> it come near to<br> you and you can give <b>gunpowder</b> with killing it
     </p>
-</span>
+</span></div>
+</div>
+<creepart class="bottomright">
+    <div class="tooltip">
+<img class='Hovermode' src="../assets/img/daimondpic.png" width="40px" height="40px"><span style='font-size: smaller;' class="tooltiptext">Diamond Pickaxe</span></div>
+<div class="tooltip">
+<img class='Hovermode' src="../assets/img/axe.png" width="40px" height="40px"><span style='font-size: smaller;' class="tooltiptext">Stone Axe</span></div>
+</creepart>
+<steve class="bottomleft">
+    <img src="../assets/img/steve.png" width="75" height="100">
+</steve>
 </body>
 <style>
+    .bottomleft {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+    .bottomright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
     .Hovermode:hover{
         filter: contrast(40%);
     }
@@ -82,7 +103,7 @@ Server Adress : UNKNOWN
         background-size: contain;
         color: white;
         position: fixed;
-        top: 50px;
+        top: 55px;
         right: 50px;
     }
     #status2{
