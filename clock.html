@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clock</title>
+    <style>
+      #clock {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 48px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="clock"></div>
+
+    <script>
+      function updateTime() {
+        var date = new Date();
+        var time = date.toLocaleTimeString();
+        document.getElementById("clock").innerHTML = time;
+      }
+      setInterval(updateTime, 1000);
+    </script>
+  </body>
+</html>
